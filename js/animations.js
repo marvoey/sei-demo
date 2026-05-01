@@ -100,29 +100,10 @@
   /* ── 3. CURSOR-FOLLOWING GLOW ──────────────────────────────────── */
   function initCursorGlow() {
     const glow = document.querySelector('.hero-glow');
-    const trail = document.querySelector('.hero-glow-trail');
     if (!glow) return;
-
-    if (trail) trail.style.display = 'none';
-
-    const canvas = document.createElement('canvas');
-    canvas.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;z-index:9997;';
-    document.body.appendChild(canvas);
-    const ctx = canvas.getContext('2d');
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      canvas.style.width = canvas.width + 'px';
-      canvas.style.height = canvas.height + 'px';
-    }
-    resize();
-    window.addEventListener('resize', resize, { passive: true });
 
     let tx = null, ty = null;
     let cx = -100, cy = -100;
-    const history = [];
-    const MAX = 32;
 
     document.addEventListener('mousemove', e => {
       if (tx === null) { cx = e.clientX; cy = e.clientY; }
@@ -134,26 +115,8 @@
       if (tx !== null) {
         cx += (tx - cx) * 0.12;
         cy += (ty - cy) * 0.12;
-        history.push({ x: cx, y: cy });
-        if (history.length > MAX) history.shift();
       }
-
       glow.style.transform = `translate(${cx - 14}px, ${cy - 14}px)`;
-
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      for (let i = 1; i < history.length; i++) {
-        const t = i / history.length;
-        ctx.beginPath();
-        ctx.moveTo(history[i - 1].x, history[i - 1].y);
-        ctx.lineTo(history[i].x, history[i].y);
-        ctx.strokeStyle = `rgba(210, 30, 0, ${t * 0.25})`;
-        ctx.lineWidth = t * 22;
-        ctx.lineCap = 'round';
-        ctx.lineJoin = 'round';
-        ctx.stroke();
-      }
-
       requestAnimationFrame(loop);
     })();
   }
@@ -307,33 +270,6 @@
         el.style.transform = '';
       }, 200 + i * 120);
     });
-  }
-
-  /* ── 11. TEXT SCRAMBLE ─────────────────────────────────────────── */
-  function initTextScramble() {
-    const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%▌▐░▒';
-    function scrambleEl(el, delay) {
-      const final = el.textContent.trim();
-      if (!final) return;
-      let frame = 0;
-      const rate = 2.8;
-      setTimeout(() => {
-        const iv = setInterval(() => {
-          el.textContent = final.split('').map((ch, i) => {
-            if (ch === ' ') return ' ';
-            if (i < frame / rate) return final[i];
-            return CHARS[Math.floor(Math.random() * CHARS.length)];
-          }).join('');
-          frame++;
-          if (frame > final.length * rate + 4) { clearInterval(iv); el.textContent = final; }
-        }, 26);
-      }, delay);
-    }
-    if (document.body.dataset.page === 'personalized') {
-      const hl = document.querySelector('.hero-headline');
-      if (hl) scrambleEl(hl, 680);
-    }
-    window.__scrambleEl = scrambleEl;
   }
 
   /* ── 12. MAGNETIC CURSOR ───────────────────────────────────────── */
@@ -601,10 +537,10 @@
 
   /* ── INIT ──────────────────────────────────────────────────────── */
   function init() {
-    initTextScramble();
     initHeroParallax();
     // initParticleMesh();
     initHeadlineReveal();
+
     initCursorGlow();
     initScrollProgress();
     initNav();
