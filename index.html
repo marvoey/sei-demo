@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEI | Financial value is created between the lines.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+
+  <!-- Personalization Modal -->
+  <div id="personalization-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-question-text">
+    <div class="modal-card">
+      <div class="modal-progress"><div class="modal-progress-fill"></div></div>
+      <div class="modal-header">
+        <div class="modal-logo"><img src="assets/logo.svg" alt="SEI"></div>
+        <div class="modal-step-label">Step 1 of 1 &mdash; Personalize your experience</div>
+        <div class="modal-question" id="modal-question-text">What best describes your advisory practice?</div>
+        <div class="modal-sub">We'll tailor your experience to what matters most to you.</div>
+      </div>
+      <div class="modal-options">
+        <button class="modal-option" data-segment="bd-breakaway">
+          <span class="modal-option-icon">📈</span>
+          <span class="modal-option-text">
+            <span class="modal-option-label">BD Breakaway Advisor</span>
+            <span class="modal-option-desc">Moving from a broker-dealer to full independence</span>
+          </span>
+          <span class="modal-check"></span>
+        </button>
+        <button class="modal-option" data-segment="enterprise-ria">
+          <span class="modal-option-icon">🏢</span>
+          <span class="modal-option-text">
+            <span class="modal-option-label">Enterprise RIA</span>
+            <span class="modal-option-desc">Established independent advisory firm at scale</span>
+          </span>
+          <span class="modal-check"></span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-continue" disabled>Continue</button>
+        <button class="modal-skip">Skip for now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome Back Banner (shown when segment already set) -->
+  <div id="welcome-bar" class="welcome-bar hidden">
+    <div class="welcome-bar-inner">
+      <span>Welcome back — your experience is personalized for <strong data-segment-label></strong>.</span>
+      <a href="#" data-segment-link>Go to your page &rarr;</a>
+      <button class="welcome-bar-dismiss" data-dismiss aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.svg" alt="SEI"></a>
+      <div class="nav-links">
+        <a href="#">Solutions</a>
+        <a href="#">Investments</a>
+        <a href="#">Who We Serve</a>
+        <a href="#">Our Insights</a>
+        <a href="#">About SEI</a>
+      </div>
+      <div class="nav-utility">
+        <a href="#" class="nav-login">Client Login</a>
+        <span class="nav-sep">/</span>
+        <a href="#" class="nav-contact">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <video class="hero-bg-img" src="assets/home video demo.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="hero-content">
+      <div class="hero-eyebrow">SEI Enterprise</div>
+      <h1 class="hero-headline">Financial value is created between the lines.</h1>
+      <p class="hero-subheadline">Explore integrated solutions that align investing, operations, and insight at enterprise scale.</p>
+      <a href="#" class="hero-cta">
+        <svg class="hero-cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        SEI Assistant &mdash; Ask a question
+      </a>
+    </div>
+  </section>
+
+  <!-- Executive Spotlight -->
+  <section class="spotlight section sei-reveal">
+    <div class="container">
+      <div class="spotlight-inner">
+        <div class="spotlight-image">
+          <img src="assets/dakota-live-interview.png" alt="Inside SEI: Dakota Live Interview" class="spotlight-img">
+          <div class="spotlight-image-overlay"></div>
+          <button class="spotlight-play" aria-label="Play video">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </button>
+          <span class="spotlight-image-label">Inside SEI: Dakota Live</span>
+        </div>
+        <div class="spotlight-meta">
+          <div class="section-eyebrow">Executive Spotlight</div>
+          <div class="spotlight-label">Dakota Live</div>
+          <h2 class="spotlight-headline">Dakota Live: Inside SEI:</h2>
+          <p class="spotlight-body">CEO Ryan Hicke&mdash;joined by Michael Lane, Head of Asset Management, and Sean Lawlor, Head of our Traditional Investment Managers business&mdash; shares insights on leadership, culture, and how SEI is prioritizing client-centric growth and innovation.</p>
+          <blockquote class="spotlight-quote">&ldquo;Innovation across areas like alternatives, tokenization, data, and technology &mdash; including AI &mdash; is shaping better outcomes for clients.&rdquo;</blockquote>
+          <div class="spotlight-attribution">
+            <span class="spotlight-attribution-name">Ryan Hicke</span>
+            <span class="spotlight-attribution-title">Chief Executive Officer, SEI</span>
+          </div>
+          <a href="#" class="spotlight-cta">
+            Watch the full conversation
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get to Know SEI -->
+  <section class="know-sei section">
+    <div class="container">
+      <div class="section-eyebrow">Get to Know SEI</div>
+      <h2 class="section-headline">Built for every layer of the wealth ecosystem.</h2>
+      <p class="section-body">When capital moves, expectations rise around control, transparency, and consistency. SEI partners with organizations at the center of investing and wealth to support disciplined execution and long-term reliability.</p>
+      <div class="know-sei-grid">
+        <div class="know-pillar">
+          <div class="know-pillar-num">01</div>
+          <div class="know-pillar-head">What we do</div>
+          <p class="know-pillar-body">We help financial services firms overcome disparate systems, inefficient operations, and rising expectations.</p>
+        </div>
+        <div class="know-pillar">
+          <div class="know-pillar-num">02</div>
+          <div class="know-pillar-head">Why we do it</div>
+          <p class="know-pillar-body">Accelerating transformation for better client outcomes.</p>
+        </div>
+        <div class="know-pillar">
+          <div class="know-pillar-num">03</div>
+          <div class="know-pillar-head">How we&rsquo;re different</div>
+          <p class="know-pillar-body">The clarity of a whole-ecosystem vantage point.</p>
+        </div>
+        <div class="know-pillar">
+          <div class="know-pillar-num">04</div>
+          <div class="know-pillar-head">Who we do it for</div>
+          <p class="know-pillar-body">Partners across the wealth and investment spectrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By -->
+  <section class="trusted section sei-reveal">
+    <div class="container">
+      <div class="trusted-header">
+        <div class="trusted-header-headline">Proof in practice</div>
+        <div class="trusted-header-sub">See the stories&mdash;and the numbers&mdash;that show what&rsquo;s possible with SEI as your trusted strategic partner.</div>
+      </div>
+      <div class="trusted-card">
+        <div class="trusted-card-visual">
+          <img src="assets/summit-wealth-group.png" alt="Summit Wealth Group" class="trusted-card-img">
+        </div>
+        <div class="trusted-card-content">
+          <div class="trusted-card-tag">RIA / Wealth Management</div>
+          <h3 class="trusted-card-headline">Summit Wealth Group</h3>
+          <p class="trusted-card-body">To support its evolved RIA operating model, Summit Wealth Group partnered with SEI to launch an integrated wealth platform that brings together technology, operations, and investment infrastructure &mdash; allowing the firm to scale efficiently while maintaining flexibility and a high-touch client experience.</p>
+          <div class="trusted-card-stats">
+            <div class="trusted-stat">
+              <div class="trusted-stat-val">$9B+</div>
+              <div class="trusted-stat-label">Assets under advisement supported by SEI&rsquo;s integrated wealth infrastructure</div>
+            </div>
+            <div class="trusted-stat">
+              <div class="trusted-stat-val">Multi-custodial</div>
+              <div class="trusted-stat-label">Operating model powered by a single platform across technology, operations, and investments</div>
+            </div>
+          </div>
+          <a href="#" class="trusted-cta">
+            Read the full case study
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="trusted-logos">
+        <img class="trusted-logo-img" src="assets/summit-wealth-group.png" alt="Summit Wealth Group">
+        <img class="trusted-logo-img" src="assets/first-financial-bank.png" alt="First Financial Bank">
+        <img class="trusted-logo-img" src="assets/tcw.png" alt="TCW">
+        <img class="trusted-logo-img" src="assets/kent-state-university.jpg" alt="Kent State University">
+      </div>
+    </div>
+  </section>
+
+  <!-- SEI By Numbers -->
+  <section class="by-numbers section">
+    <div class="container">
+      <div class="by-numbers-header">
+        <div class="by-numbers-eyebrow">Scale &amp; Impact</div>
+        <div class="by-numbers-headline">Depth you can feel. Reach you can measure.</div>
+        <div class="by-numbers-sub">End-to-end capability, global coverage&mdash;across platforms, products, and time zones.</div>
+      </div>
+      <div class="by-numbers-grid">
+        <div class="by-numbers-stat">
+          <div class="by-numbers-val" data-target="1.9" data-prefix="$" data-suffix="T">$1.9T</div>
+          <div class="by-numbers-label">Assets Under Management &amp; Administration</div>
+          <div class="by-numbers-short">AUM &amp; AUA</div>
+        </div>
+        <div class="by-numbers-stat">
+          <div class="by-numbers-val" data-target="58">58</div>
+          <div class="by-numbers-label">Years of Institutional Experience</div>
+          <div class="by-numbers-short">Years in Service</div>
+        </div>
+        <div class="by-numbers-stat">
+          <div class="by-numbers-val" data-target="2000" data-suffix="+" data-comma="true">2,000+</div>
+          <div class="by-numbers-label">Industry Experts Worldwide</div>
+          <div class="by-numbers-short">Global Professionals</div>
+        </div>
+        <div class="by-numbers-stat">
+          <div class="by-numbers-val" data-target="130" data-suffix="+">130+</div>
+          <div class="by-numbers-label">Countries Served</div>
+          <div class="by-numbers-short">Global Reach</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expert Insights -->
+  <section class="insights section sei-reveal">
+    <div class="container">
+      <div class="insights-header">
+        <div>
+          <div class="section-eyebrow">Expert Insights</div>
+          <div class="insights-headline">Perspectives from SEI Leadership</div>
+        </div>
+        <a href="#" class="insights-all-cta">View all insights &rarr;</a>
+      </div>
+      <div class="insights-grid">
+        <div class="insight-card stagger-child">
+          <div class="insight-card-image"><img src="assets/sneha-shah.jpg" alt="Sneha Shah"></div>
+          <div class="insight-card-body">
+            <span class="insight-type">Podcast</span>
+            <span class="insight-category">Asset Management</span>
+            <div class="insight-headline">Building the Next Wave.</div>
+            <div class="insight-excerpt">How AI, tokenization, and innovation drive new wealth tech business models.</div>
+            <div class="insight-author">Sneha Shah</div>
+            <div class="insight-author-title">Executive Vice President, Head of New Business Ventures</div>
+          </div>
+        </div>
+        <div class="insight-card stagger-child">
+          <div class="insight-card-image"><img src="assets/michael-lane.jpg" alt="Michael Lane"></div>
+          <div class="insight-card-body">
+            <span class="insight-type">Podcast</span>
+            <span class="insight-category">Financial Advisors</span>
+            <div class="insight-headline">Human-led, AI-Enabled Advice.</div>
+            <div class="insight-excerpt">How AI can scale advice while advisors build trust, insight, and better client outcomes.</div>
+            <div class="insight-author">Michael Lane</div>
+            <div class="insight-author-title">Executive Vice President, Head of Asset Management</div>
+          </div>
+        </div>
+        <div class="insight-card stagger-child">
+          <div class="insight-card-image"><img src="assets/jeffrey-benfield.jpg" alt="Jeffrey Benfield"></div>
+          <div class="insight-card-body">
+            <span class="insight-type">Article</span>
+            <span class="insight-category">Banks &amp; Wealth Managers</span>
+            <div class="insight-headline">Harnessing momentum in wealth.</div>
+            <div class="insight-excerpt">What it takes to modernize client experience while transaction volumes and expectations rise.</div>
+            <div class="insight-author">Jeffrey Benfield</div>
+            <div class="insight-author-title">Chief Product Officer</div>
+          </div>
+        </div>
+        <div class="insight-card stagger-child">
+          <div class="insight-card-image"><img src="assets/sean-lawlor.jpg" alt="Sean Lawlor"></div>
+          <div class="insight-card-body">
+            <span class="insight-type">Article</span>
+            <span class="insight-category">Asset Management</span>
+            <div class="insight-headline">Data transparency: The new currency in asset management.</div>
+            <div class="insight-excerpt">Why data transparency is critical to scalable, resilient operations in asset management.</div>
+            <div class="insight-author">Sean Lawlor</div>
+            <div class="insight-author-title">Head of Traditional Investment Manager Services</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stay Connected -->
+  <section class="stay-connected sei-reveal">
+    <div class="container">
+      <div class="stay-inner">
+        <div>
+          <div class="stay-eyebrow">Stay Connected</div>
+          <h2 class="stay-headline">What&rsquo;s New at SEI</h2>
+          <p class="stay-body">Subscribe for timely insights on product innovation, platform enhancements, real-world use cases, expert conversations, and upcoming learning opportunities across the wealth ecosystem.</p>
+        </div>
+        <div class="stay-form">
+          <label class="stay-form-label" for="email-input">Business Email</label>
+          <input class="stay-form-input" id="email-input" type="email" placeholder="yourname@company.com" autocomplete="email">
+          <button class="stay-form-btn" type="button">Subscribe to SEI Insights</button>
+          <p class="stay-form-legal">By subscribing, you agree to receive marketing emails from SEI. Unsubscribe at any time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-col-head">Investments</div>
+          <div class="footer-col-links">
+            <a href="#">Investment solutions</a>
+            <a href="#">Core investment beliefs</a>
+            <a href="#">Explore investment strategies</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-head">Solutions</div>
+          <div class="footer-col-links">
+            <a href="#">Technology</a>
+            <a href="#">Custody</a>
+            <a href="#">Advisor services</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-head">Our Insights</div>
+          <div class="footer-col-links">
+            <a href="#">Thought leadership</a>
+            <a href="#">Events</a>
+            <a href="#">SEI Growth Lab</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-head">Contact Us</div>
+          <div class="footer-col-links">
+            <a href="#">Our team</a>
+            <a href="#">Contact us</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-head">Overview</div>
+          <div class="footer-col-links">
+            <a href="#">About SEI</a>
+            <a href="#">Client login</a>
+            <a href="#">Locations</a>
+            <a href="#">Newsroom</a>
+            <a href="#">Investor relations</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <div class="footer-legal-links">
+          <a href="#">Cookies Settings</a>
+          <a href="#">Cookie policy</a>
+          <a href="#">Privacy notice</a>
+          <a href="#">Accessibility statement</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Fund documents</a>
+          <a href="#">Corporate governance</a>
+        </div>
+        <div class="footer-copyright">&copy;2026 SEI All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="hero-glow-trail"></div>
+  <div class="hero-glow"></div>
+  <script src="js/personalization.js"></script>
+  <script src="js/cms.js"></script>
+  <script src="js/journey.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
