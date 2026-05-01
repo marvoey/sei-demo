@@ -1,0 +1,172 @@
+{
+  "segments": {
+    "default": {
+      "label": "General",
+      "hero": {
+        "eyebrow": "SEI Enterprise",
+        "headline": "Financial value is created between the lines.",
+        "subheadline": "Explore integrated solutions that align investing, operations, and insight at enterprise scale.",
+        "cta": "SEI Assistant — Ask a question"
+      },
+      "executiveSpotlight": {
+        "eyebrow": "Executive Spotlight",
+        "tag": "Dakota Live",
+        "headline": "Dakota Live: Inside SEI:",
+        "body": "CEO Ryan Hicke–joined by Michael Lane, Head of Asset Management, and Sean Lawlor, Head of our Traditional Investment Managers business– shares insights on leadership, culture, and how SEI is prioritizing client-centric growth and innovation.",
+        "quote": "Innovation across areas like alternatives, tokenization, data, and technology — including AI — is shaping better outcomes for clients.",
+        "attribution": "Ryan Hicke",
+        "attributionTitle": "Chief Executive Officer, SEI",
+        "cta": "Watch the full conversation"
+      }
+    },
+    "bd-breakaway": {
+      "label": "BD Breakaway",
+      "hero": {
+        "headline": "Summit Wealth broke away and never looked back.",
+        "subheadline": "See how a BD-affiliated advisor built a thriving independent RIA with SEI's technology, operations, and transition support."
+      },
+      "executiveSpotlight": {
+        "eyebrow": "Executive Spotlight",
+        "tag": "Dakota Live",
+        "headline": "Hear from Randy Morris, CFP®",
+        "body": "Watch the Dakota Live conversation with Ryan Hicke, SEI CEO — and hear directly from an advisor who made the move.",
+        "quote": "A partner like SEI was an important part of our decision-making process.",
+        "attribution": "Randy Morris",
+        "attributionTitle": "CFP®",
+        "cta": "Watch the conversation"
+      },
+      "suggestedContent": [
+        {
+          "tag": "Independence Pathway",
+          "headline": "BD to RIA: Your transition roadmap.",
+          "body": "Understand the key decisions, timelines, and support structures for making the move from a broker-dealer to full independence.",
+          "cta": "Learn More"
+        },
+        {
+          "tag": "Platform",
+          "headline": "Simplify your operations from day one.",
+          "body": "SEI's integrated platform handles custody, compliance, billing, and reporting — so you can focus on your clients.",
+          "cta": "Learn More"
+        },
+        {
+          "tag": "Calculator",
+          "headline": "Model your independence economics.",
+          "body": "Our interactive tool helps you see the real financial picture of going independent — revenue, costs, and break-even timeline.",
+          "cta": "Learn More"
+        }
+      ],
+      "personalizationPrompt": {
+        "label": "Personalize Your Experience",
+        "question": "What type of transition is your firm considering?",
+        "options": ["Going RIA", "Buying and Merging", "Navigating Succession", "Selling Your Practice"]
+      },
+      "businessAudit": {
+        "headline": "Business Audit",
+        "body": "The Business Audit measures your business across eight key focus areas. By diagnosing your core firm vitals, we can help you understand gaps, identify opportunities, and find the momentum and clarity you need to reach your important milestones.",
+        "cta": "Begin"
+      }
+    },
+    "enterprise-ria": {
+      "label": "Enterprise RIA",
+      "hero": {
+        "headline": "Financial value is created between the lines.",
+        "subheadline": "Explore integrated solutions that align investing, operations, and insight at enterprise scale.",
+        "cta": "Learn More"
+      },
+      "suggestedContent": [
+        {
+          "tag": "Independence Pathway",
+          "headline": "BD to RIA: Your transition roadmap.",
+          "body": "Understand the key decisions, timelines, and support structures for making the move from a broker-dealer to full independence.",
+          "cta": "Learn More"
+        },
+        {
+          "tag": "Platform",
+          "headline": "Simplify your operations from day one.",
+          "body": "SEI's integrated platform handles custody, compliance, billing, and reporting — so you can focus on your clients.",
+          "cta": "Learn More"
+        },
+        {
+          "tag": "Calculator",
+          "headline": "Model your independence economics.",
+          "body": "Our interactive tool helps you see the real financial picture of going independent — revenue, costs, and break-even timeline.",
+          "cta": "Learn More"
+        }
+      ],
+      "personalizationPrompt": {
+        "label": "Personalize Your Experience",
+        "question": "Tell us about your ETF needs",
+        "options": [
+          "Understand SEI's investment philosophy and approach.",
+          "Evaluate how SEI ETFs fit into our portfolios",
+          "Explore trends and best practices in ETF portfolio construction."
+        ]
+      },
+      "businessAudit": {
+        "headline": "Business Audit",
+        "body": "The Business Audit measures your business across eight key focus areas. By diagnosing your core firm vitals, we can help you understand gaps, identify opportunities, and find the momentum and clarity you need to reach your important milestones.",
+        "cta": "Begin"
+      }
+    }
+  },
+  "shared": {
+    "nav": {
+      "links": ["Solutions", "Investments", "Who We Serve", "Our Insights", "About SEI"],
+      "utilityLinks": ["Client Login", "Contact Us"]
+    },
+    "expertInsights": {
+      "eyebrow": "Expert Insights",
+      "headline": "Perspectives from SEI Leadership",
+      "cta": "View all insights",
+      "articles": [
+        {
+          "type": "Podcast",
+          "category": "Asset Management",
+          "author": "Sneha Shah",
+          "initials": "SS",
+          "authorTitle": "Executive Vice President, Head of New Business Ventures",
+          "headline": "Building the Next Wave.",
+          "excerpt": "How AI, tokenization, and innovation drive new wealth tech business models."
+        },
+        {
+          "type": "Podcast",
+          "category": "Financial Advisors",
+          "author": "Michael Lane",
+          "initials": "ML",
+          "authorTitle": "Executive Vice President, Head of Asset Management",
+          "headline": "Human-led, AI-Enabled Advice.",
+          "excerpt": "How AI can scale advice while advisors build trust, insight, and better client outcomes."
+        },
+        {
+          "type": "Article",
+          "category": "Banks & Wealth Managers",
+          "author": "Jeffrey Benfield",
+          "initials": "JB",
+          "authorTitle": "Chief Product Officer",
+          "headline": "Harnessing momentum in wealth.",
+          "excerpt": "What it takes to modernize client experience while transaction volumes and expectations rise."
+        },
+        {
+          "type": "Article",
+          "category": "Asset Management",
+          "author": "Sean Lawlor",
+          "initials": "SL",
+          "authorTitle": "Head of Traditional Investment Manager Services",
+          "headline": "Data transparency: The new currency in asset management.",
+          "excerpt": "Why data transparency is critical to scalable, resilient operations in asset management."
+        }
+      ]
+    },
+    "footer": {
+      "columns": [
+        { "heading": "Investments", "links": ["Investment solutions", "Core investment beliefs", "Explore investment strategies"] },
+        { "heading": "Solutions", "links": ["Technology", "Custody", "Advisor services"] },
+        { "heading": "Our Insights", "links": ["Thought leadership", "Events", "SEI Growth Lab"] },
+        { "heading": "Contact Us", "links": ["Our team", "Contact us"] },
+        { "heading": "Overview", "links": ["About SEI", "Client login", "Locations", "Newsroom", "Investor relations", "Careers"] }
+      ],
+      "legal": ["Cookies Settings", "Cookie policy", "Privacy notice", "Accessibility statement", "Terms of use", "Fund documents", "Corporate governance"],
+      "copyright": "©2026 SEI All rights reserved."
+    }
+  }
+}

@@ -5,13 +5,13 @@ const SEGMENTS = {
     label: 'BD Breakaway',
     icon: '📈',
     desc: 'Moving from a broker-dealer to independence',
-    page: 'personalized-bd.html'
+    page: '/sei-bd-breakaway/index.html'
   },
   'enterprise-ria': {
     label: 'Enterprise RIA',
     icon: '🏢',
     desc: 'Established independent advisory at scale',
-    page: 'personalized-ria.html'
+    page: '/sei-enterprise-ria/index.html'
   }
 };
 

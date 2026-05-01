@@ -156,7 +156,7 @@
     link.addEventListener('click', e => {
       e.preventDefault();
       P.clearSegment();
-      window.location.href = 'index.html';
+      window.location.href = '/index.html';
     });
   }
 })();
